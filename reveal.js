@@ -1,31 +1,31 @@
-// $(function () {
+$(function () {
 
-//   var selector = ".reveal";
-//   var percentageToScrollInBeforeRevealing = 20;
+  var selector = ".reveal";
+  var percentageToScrollInBeforeRevealing = 20;
 
-//   $(window).scroll(function () {
+  $(window).scroll(function () {
 
-//     var pageTop = $(document).scrollTop();
-//     var pageBottom = (
-//           pageTop +
-//           $(window).height() -
-//           (
-//             $(window).height() *
-//             percentageToScrollInBeforeRevealing *
-//             0.01
-//           )
-//         );
+    var pageTop = $(document).scrollTop();
+    var pageBottom = (
+          pageTop +
+          $(window).height() -
+          (
+            $(window).height() *
+            percentageToScrollInBeforeRevealing *
+            0.01
+          )
+        );
 
-//     $(selector).each(function() {
+    $(selector).each(function() {
 
-//       if ($(this).offset().top < pageBottom) {
-//         $(this).addClass("visible");
-//       }
+      if ($(this).offset().top < pageBottom) {
+        $(this).addClass("visible");
+      }
 
-//     });
+    });
 
-//   });
+  });
 
-//   $(window).trigger("scroll");
+  $(window).trigger("scroll");
 
-// });
+});
