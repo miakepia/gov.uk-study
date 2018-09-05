@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Creating unified navigation across GOV.UK, by Mia Allers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/reset.css">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="https://use.typekit.net/fdl8gcc.css">
+    </head>
+    <header>
+      <!-- <div class="grid">
+      <a href="https://miakepia.github.io/">Mia Allers</a>
+    </div> -->
+    </header>
+
+    <body>
+      <main>
+        <div class="grid">
+  <h1>Creating unified navigation across GOV.UK, by Mia Allers</h1>
+</div>
+
+<!-- GRID /////////////////////////////////////////////////// -->
+
+<!-- ROWS /////////////////////////////////////////////////// -->
+
+<!-- Body content -->
+
+<!-- Section title  -->
+
+<!-- Aside  -->
+
+<!-- Intro -->
+<!-- 
+
+ -->
+
+<!-- /////////////// INTRO /////////////  -->
+<!-- 
+<div class="grid" markdown="1">
+
+<div class="row" markdown="1">
+ -->
+
+<div class="grid">
+    <div class="page-intro">
+      <div class="page-intro-lede">
+            <p>Navigating across <a href="https://www.gov.uk">GOV.UK</a> is difficult.</p>
+      </div>
+
+        <div class="body-content reveal">
+          <img src="/images/small-browser.png" alt="An illustration of a browser screen" />
+        </div>
+
+      <div class="page-intro-body left reveal">
+          <p>It’s not one website, it’s two. Or three. Or more, depending on who you ask.</p>
+          <p>After six years, we began trying to fix a problem that proved to be fundamental and far-reaching: how do we help users find what they need?</p>
+      </div>
+
+    </div>
+    <div class="reveal dots-img">
+      <img src="/images/dot-grid.png" alt="An abstract image of the user journey" />
+    </div>
+   </div>
+
+<!-- 
+</div>
+
+</div>
+ -->
+
+<!-- Row -->
+<div class="grid">
+
+  <div class="row">
+
+    <div class="body-content">
+
+      <p>This is a case study about how the Frontend Design &amp; Navigation team on GOV.UK started tackling the thorny issue of site-wide navigation. This particular piece of work has spanned a number of months, and is still in progress.</p>
+
+    </div>
+
+    <!-- End row -->
+  </div>
+
+</div>
+
+<!-- /////////////// PART 1 — USERS /////////////  -->
+<div class="reveal">
+
+  <div class="chapter-cover" style="background-color: #292d34;
+    background-image: url('/images/principles.png');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
+
+      <div class="cover-grid">
+              <div class="chapter-number reveal" style="color: #3497FF;">
+                <p>1</p>
+              </div>
+
+              <div class="cover-body-content">
+                <div class="cover-text reveal" style="color: white;">
+                  <h2>Begin at the beginning</h2>
+                  <p>After six years of evolving features, it was necessary to go back to first principles on GOV.UK<sup style="color: #3497FF">1</sup></p>
+                </div>
+            </div>
+      </div>
+  </div>
+</div>
+
+<!-- Row -->
+<div class="grid">
+
+  <div class="row">
+
+    <aside>
+  <div class="aside-row">
+    1. The first point of the Government Design Principles is "Start with user needs". For more detail, read the full <a href="https://www.gov.uk/guidance/government-design-principles#start-with-user-needs">Design Principles</a>.
+  </div>
+</aside>
+
+    <div class="body-content">
+
+      <h3>The split</h3>
+      <p>From the beginning, GOV.UK was split by user group.</p>
+
+      <p><a href="https://www.gov.uk/browse/benefits">‘Mainstream’</a> users were those using the site for ‘personal’ reasons — applying for a driving licence, getting a marriage certificate — while <a href="https://www.gov.uk/government/policies">‘Whitehall’</a> users interacted with the site on a ‘professional’ basis. Each group had content that was written and published separately.</p>
+
+      <p>Going through the research, we realised this was a problem. All users may need to interact with all kinds of content, and the publishing split was causing broken journeys.</p>
+
+    </div>
+
+    <!-- End row -->
+  </div>
+
+</div>
+
+<!-- Row -->
+<div class="grid">
+
+  <div class="reveal">
+  <div class="publishing-apps-container">
+    <div class="col-5 left">
+      <table class="publishing-apps">
+          <tr>
+            <th><div class="big">71%</div>"Personal"</th>
+            <th><div class="big">29%</div> "Professional"</th>
+          </tr>
+          <tr>
+            <td class="personal">Mainstream content</td>
+            <td class="professional">Whitehall content</td>
+          </tr>
+        </table>
+    </div>
+  </div>
+</div>
+
+  <!-- End row -->
+</div>
+
+<!-- Row -->
+<div class="grid">
+
+  <div class="row">
+
+    <div class="body-content">
+
+      <h3>Grouping users in a better way</h3>
+      <p>Grouping users by personal and professional use wasn’t working. However, we were aware that splitting users by demographic traits would be impossible. By sifting through <a href="https://userresearch.blog.gov.uk">all the research</a> done since the launch of GOV.UK, we were able to group our users by three main <a href="https://jtbd.info">Jobs To Be Done</a>:</p>
+      <div class="reveal">
+    <div class="job-stories-container">
+      <div class="job-stories">
+          <ol>
+            <li><span>Do a thing</span></li>
+            <li><span>Advise on a thing</span></li>
+            <li><span>Change a thing</span></li>
+          </ol>
+      </div>
+    </div>
+</div>
+
+      <p>Jobs To Be Done give a good idea of what a user is trying to achieve, and why. Each job includes a range of tasks, and each task requires the user to interact with a range of content.</p>
+
+    </div>
+
+    <!-- End row -->
+  </div>
+
+</div>
+
+<!-- /////////////// PART 2 — GROUPING CONTENT /////////////  -->
+<div class="reveal">
+  <div class="chapter-cover chapter-4" style="  background-color: red;
+    background-image: url('/images/formats.png');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
+      <div class="cover-grid">
+              <div class="chapter-number reveal" style="color: #3497FF;">
+                <p style="color:#292d34;">2</p>
+              </div>
+              <div class="cover-body-content">
+                <div class="cover-text reveal" style="color: white;">
+                  <h2>Sorting content</h2>
+                  <p>Understanding user jobs allowed us to group content in a way that would be logical and useful for our users.</p>
+                </div>
+            </div>
+      </div>
+  </div>
+</div>
+
+<!-- Row -->
+<div class="grid">
+
+  <div class="row">
+
+    <div class="body-content">
+
+      <h3>Categorising content</h3>
+      <p>GOV.UK has hundreds of content types — a hangover from <a href="https://gds.blog.gov.uk/tag/transition/">Transition</a>. These needed to be sorted and categorised if we wanted to bring any kind of logic to our user journeys.</p>
+
+      <p>We used card sorting to group 72 content types into 5 ‘super groups’. We then used <a href="https://www.optimalworkshop.com/treejack">tree testing</a> to refine our groups with publishers throughout government, and later with thousands of end users.</p>
+
+      <p>The tests gave us a good idea of what kind of content we were publishing, but we needed to know why our users were reading.</p>
+
+    </div>
+
+    <!-- End row -->
+  </div>
+
+</div>
+
+<!-- Row -->
+<div class="grid">
+
+  <div class="row">
+
+    <!-- <div class="reveal">
+<div class="content-types">
+        <table>
+          <tr>
+            <th>
+            <div class="big">5</div><h3>Super-groups</h3>
+            <div class="big">72</div><h3>Content types</h3>
+          </th>
+            <td><h4>Guidance</h4><div class="big-alt">15</div><p>Content types</p></td>
+            <td><h4>Services</h4><div class="big-alt">10</div><p>Content types</p></td>
+            <td><h4>Policy</h4><div class="big-alt">7</div><p>Content types</p></td>
+            <td><h4>News</h4><div class="big-alt">16</div><p>Content types</p></td>
+            <td><h4>Data</h4><div class="big-alt">24</div><p>Content types</p></td>
+          </tr>
+        </table>
+      </div>
+</div> -->
+
+    <div class="reveal">
+<div class="content-types">
+        <table>
+          <tr>
+            <th>
+            <div class="big">5</div><h4>Super-groups</h4>
+            <div class="big">72</div><h4>Content types</h4>
+            </th>
+              <td><h5>Guidance</h5><div class="big-alt">15</div><p>Content types</p></td>
+              <td><h5>Services</h5><div class="big-alt">10</div><p>Content types</p></td>
+              <td><h5>Policy</h5><div class="big-alt">7</div><p>Content types</p></td>
+              <td><h5>News</h5><div class="big-alt">16</div><p>Content types</p></td>
+              <td><h5>Data</h5><div class="big-alt">24</div><p>Content types</p></td>
+          </tr>
+        </table>
+      </div>
+</div>
+
+    <!-- End row -->
+  </div>
+
+</div>
+
+<!-- /////////////// PART 3 — GROUPING USERS /////////////  -->
+<!-- Row -->
+<div class="grid">
+
+  <div class="row">
+
+    <div class="body-content">
+
+      <h3>Matching content to jobs</h3>
+      <p>We had the what, and we had the why. But to fix navigation, we had to marry the two by matching content groups to job stories. </p>
+
+      <p>Doing this meant identifying which content types our users needed to complete different jobs, giving us a starting point for figuring out how pages needed to link up.</p>
+
+      <p>Knowing which content types were needed for each job also gave us a rough idea of how to generate and prioritise links.</p>
+
+    </div>
+
+    <!-- End row -->
+  </div>
+
+</div>
+
+<!-- Row -->
+<div class="grid">
+
+  <div class="row">
+
+    <div class="reveal">
+  <div class="user-journey">
+    <img src="/images/journey.png" alt="An abstract map representing the user jobs across content types" />
+  </div>
+</div>
+
+    <!-- End row -->
+  </div>
+
+</div>
+
+<!-- /////////////// PART 5 — THE DESIGN /////////////  -->
+<div class="reveal">
+  <div class="chapter-cover" style="  background-color: #3497FF;
+    background-image: url('/images/grid.png');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
+      <div class="cover-grid">
+              <div class="chapter-number reveal" style="color:#2323C6;">
+                <p>3</p>
+              </div>
+              <div class="cover-body-content">
+                <div class="cover-text reveal" style="color: #292d34;">
+                  <h2>Designing a content page</h2>
+                  <p>Many assume navigation begins and ends with a menu, or a homepage — but most users start on content.</p>
+                </div>
+              </div>
+      </div>
+  </div>
+</div>
+
+<!-- Row -->
+<div class="grid">
+
+  <div class="row">
+
+    <div class="body-content">
+
+      <h3>Start where the user is</h3>
+      <p>We often joke that Google is our homepage. But it’s true. Most users never even see our homepage, or any other pages designed for browsing. With most user journeys beginning on content pages, it made sense to tackle those first.</p>
+      <div class="reveal">
+  <!-- <div class="row"> -->
+  <!-- <div class="body-content"> -->
+  <div class="extra-big">
+    <p>68%</p>
+  </div>
+  <div class="fact">
+    <p>of visitors to GOV.UK land directly on a content page from Google or other search engines.</p>
+  </div>
+  <!-- </div> -->
+  <!-- </div> -->
+</div>
+
+      <h3>Designing the page</h3>
+      <p>GOV.UK has an incredibly pared back aesthetic. This is for universality, accessibility and clarity.</p>
+
+      <p><a href="https://gds.blog.gov.uk/category/style-content-design/">Content</a> needs to be of good quality, and the hierarchy needs to be clear. Everything on the page should serve a purpose, and that purpose should be led by one of five user needs.</p>
+
+      <p>These needs can be high level, such as orientating or leaving the page. Or they can be specific, such as seeing the next steps in a series, seeing what else is related, or seeing more of the same.</p>
+
+      <p>By defining these needs, we were able to arrange content on the page clearly and consistently — allowing us to create a universal and scaleable design.</p>
+
+    </div>
+
+    <aside>
+  <div class="aside-row">
+    For details on how GOV.UK approaches design, take a look at the <a href="https://design-system.service.gov.uk">Design System</a>.
+  </div>
+</aside>
+
+    <!-- End row -->
+  </div>
+
+</div>
+
+<!-- Row -->
+<div class="grid">
+
+  <div class="row">
+
+    <aside>
+  <div class="page-layout">
+      <ol>
+        <li><span>Orientate</span></li>
+        <li><span>Go up and out</span></li>
+        <li><span>What you should do</span></li>
+        <li><span>What you can do</span></li>
+        <li><span>Go deeper</span></li>
+      </ol>
+    </div>
+</aside>
+
+    <div class="reveal">
+  <div class="page-layout">
+      <!-- <div class="col-8 right"> -->
+        <img src="/images/full-page.png" alt="The full page design on desktop" />
+      <!-- </div> -->
+    </div>
+  </div>
+
+    <!-- End row -->
+  </div>
+
+</div>
+
+<!-- /////////////// PART 6 — COMPONENTS /////////////  -->
+
+<!-- Row -->
+<div class="grid">
+
+  <div class="row">
+
+    <div class="body-content">
+
+      <h3>Components</h3>
+      <p>We developed a list component that would change depending on it’s position and content. Because lists are the backbone of our navigation pattern, it was important to create flexible elements that work in different combinations. </p>
+
+    </div>
+
+    <div class="sticky-type-container">
+    <!-- <div class="grid"> -->
+      <!-- <div class="row"> -->
+        <div class="sticky-type">
+          <p>Lists</p>
+        </div>
+        <div class="body-content reveal">
+          <img src="/images/component-4.png" alt="A listing component on gov.uk" />
+        </div>
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+
+    <!-- End row -->
+  </div>
+
+</div>
+
+<!-- Row -->
+<div class="grid">
+
+  <div class="row">
+
+    <div class="body-content">
+
+      <p>The list component is based on the type hierarchy. Whereas many list styles evolved to suit a specific layout or content type, we spent time rationalising the type so that is was consistent across the site.</p>
+
+    </div>
+
+    <div class="sticky-type-container">
+    <!-- <div class="grid"> -->
+      <div class="row">
+        <div class="sticky-type">
+          <p>Type</p>
+        </div>
+        <div class="body-content reveal">
+          <img src="/images/type.png" alt="A listing component on gov.uk" />
+        </div>
+      </div>
+    <!-- </div> -->
+  </div>
+
+    <!-- End row -->
+  </div>
+
+</div>
+
+<!-- /////////////// PART 7 — TESTING /////////////  -->
+<div class="reveal">
+    <div class="chapter-cover" style="  background-color: #3E4248;
+      background-image: url('/images/research-bg.png');
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;">
+      <div class="cover-grid">
+              <div class="chapter-number reveal" style="color: red;">
+                <p>4</p>
+              </div>
+              <div class="cover-body-content">
+              <div class="cover-text reveal" style="color: white;">
+                <h2>Testing</h2>
+                <p>Testing our assumptions would be tricky, and would require a combination of methods.</p>
+              </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Row -->
+<div class="grid">
+
+  <div class="row">
+
+    <div class="body-content">
+
+      <h3>Testing</h3>
+      <p>We needed to be careful to separate the design from the content to avoid confusing the results. We also had no idea whether our jobs framework would be confirmed in the real world: so far we had been working from historical research.</p>
+
+      <p>We set up another round of tree testing to fine tune our content groups, and to begin understanding our users’ mental models of how content is categorised.</p>
+
+      <!-- <div class="research">
+  <div class="body-content reveal">
+    <img src="/images/research.png" alt="research image">
+  </div>
+</div> -->
+
+      <div class="research">
+  <!-- <div class="body-content reveal"> -->
+    <img src="/images/research.png" alt="research image" />
+  <!-- </div> -->
+</div>
+
+      <p>We also ran usability testing with users from different backgrounds: those with access needs (cognitive and physical), users with high digital confidence, low confidence and a range of domain knowledge.</p>
+
+      <p>We used the <a href="https://insidegovuk.blog.gov.uk/2017/11/14/using-ab-testing-to-measurably-improve-common-user-journeys/">GOV.UK A/B testing framework</a> to ship content page changes to 60% of users across the site for two weeks. Although not a traditional A/B test with variants, we were able to gather data on user behaviour both before and during the test.</p>
+
+      <h3>Conclusions</h3>
+      <p>We are currently collating the results of our varying tests, and are identifying areas of iteration. Results of our usability testing has confirmed our ‘5 levels of user need’ on a content page, with most users able to understand and complete tasks successfully.</p>
+
+      <p>The usability tests have also challenged some of our ideas: using real content exposed problems with similarly named links, causing confusion for our users.</p>
+
+      <p>Our A/B tests have been switched off, and so far changes are difficult to discern. A data scientist will be digging in to them to tease out any changes in behaviour that may help us understand wider journeys.</p>
+
+    </div>
+
+    <aside>
+  <div class="aside-row">
+<img src="/images/ab-tests.png" alt="A listing component on gov.uk" />
+</div>
+</aside>
+
+    <!-- End row -->
+  </div>
+
+</div>
+
+
+
+      </main>
+    </body>
+
+    <footer>
+     <div class="grid">
+
+       <div class="body-content">
+         <div class="copyright">
+           <p>Copyright Mia Allers 2018</p>
+         </div>
+         <p>With thanks to Kim Walker, Sonia Turcotte, Chris Hill-Scott and Nick Colley for all their help and advice.<p>      </div>
+    </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="/reveal.js"></script>
+
+
+</html>

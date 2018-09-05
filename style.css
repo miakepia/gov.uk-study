@@ -1,0 +1,692 @@
+
+
+
+/* GENERAL */
+
+body {
+  font-family: "neue-haas-grotesk-text", sans;
+  text-align: left;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1;
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  font-kerning: normal;
+  font-variant-ligatures: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1.6;
+}
+
+*,*:before,*:after {
+  box-sizing: border-box;
+  /* clear: both; */
+}
+
+img {
+   width:100%;
+   height: auto;
+   background-repeat:no-repeat;
+   background-size:cover;
+   overflow: hidden;
+ }
+
+/* HEADER */
+/* Notes on this section: should I use an image for the 'h' or text? Is there a way to hide the text from screen readers? */
+
+header {
+  padding-top: 30px;
+  display: block;
+  clear: both;
+  height: 3em;
+  width: 100%;
+  font-size: 1.1em;
+  margin-bottom: 2em;
+}
+
+/* Main */
+
+main {
+  min-height: 90vh;
+}
+
+/* Footer */
+
+footer {
+  /* border-top: 1px solid black; */
+  padding-top: 4em;
+  font-size: 0.7em;
+}
+
+/* .copyright {
+  float: left;
+} */
+
+
+/* Floats */
+
+.right {
+  display: block;
+  float: right;
+  text-align: left;
+}
+
+.left {
+  display: block;
+  float: left;
+  text-align: left;
+}
+
+/* .grid wraps row elements with a left and right margin */
+.grid {
+  /* border: 1px solid red; */
+  margin: auto;
+  max-width: 960px;
+  padding: 0 2.5em 0 2.5em;
+}
+
+/* Rows create new rows of content */
+.row {
+  height: auto;
+  display: inline-block;
+  position: relative;
+  /* border-bottom: 1px solid red; */
+  margin-bottom: 8em;
+  clear: both;
+}
+
+/* .row {
+  height: auto;
+  display: block;
+  position: relative;
+  border-bottom: 1px solid red;
+  margin-bottom: 8em;
+} */
+
+.sticky {
+  position: sticky;
+  position:-webkit-sticky;
+  top: 2em;
+}
+
+.body-content {
+  /* border-left: 1px solid red; */
+  display: block;
+  /* width: 58.33%; */
+  /* width: 41.66%; */
+  width: 50%;
+	float: right;
+}
+
+aside {
+  display: block;
+  float: left;
+  font-size: 0.8em;
+
+  width: 25%;
+  position: sticky;
+  position:-webkit-sticky;
+  top: 1em;
+  margin-bottom: 2em;
+}
+
+.aside-row {
+  border-left: 1px solid black;
+  padding-left: 1em;
+  display: block;
+  margin-bottom: 2em;
+}
+
+/* Nav/ header */
+.home-links {
+  font-size: 1.2em;
+}
+
+header p {
+	float: left;
+	font-weight: bold;
+}
+
+/* Typography */
+a {
+  color: #2337C6;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid #2337C6;
+}
+
+a:visited {
+  color: #2337C6;
+  border-bottom: 1px solid #2337C6;
+}
+p {
+	font-size: 1.1em;
+	padding-bottom: 1em;
+}
+
+h1 {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+H2 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.1em;
+	font-weight: bold;
+}
+
+h4 {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+sup {
+    padding-left: 0.3em;
+    vertical-align: super;
+    font-size: smaller;
+    color: #2337C6;
+}
+
+.page-intro {
+  padding-top: 2em;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.page-intro img {
+  display: block;
+  margin-bottom: 4em;
+}
+
+.page-intro-lede {
+  font-size: 3em;
+  line-height: 1.4em;
+  font-weight: bold;
+  height: 30vh;
+  margin-bottom: 1em;
+  max-width: 960px;
+}
+
+.page-intro-body {
+  width: 70%;
+  margin-bottom: 4em;
+}
+
+.dots-img {
+  width: 100%;
+  margin-bottom: 5em;
+}
+
+.big {
+	font-size: 2.5em;
+	line-height: 1.2em;
+	font-weight: bold;
+	color: red;
+}
+
+.big-alt {
+	font-size: 2.5em;
+	line-height: 1.2em;
+	font-weight: bold;
+	color: black;
+}
+
+.extra-big {
+  font-size: 7em;
+  font-weight: bold;
+  color: red;
+}
+
+.fact {
+  margin-top: -9em;
+  padding-top: 2em;
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+li span {
+  color: black;
+}
+
+/* FOOTER */
+footer p {
+  font-size: 1.2em;
+}
+
+/* CHAPTER COVERS */
+.chapter-cover {
+  height: 100vh;
+  margin-bottom: 10em;
+  position: relative;
+  overflow: hidden;
+}
+
+.cover-grid {
+  position: relative;
+  margin: auto;
+  max-width: 960px;
+  padding: 0 2.5em 0 2.5em;
+  overflow: hidden;
+  /* border: 1px solid green; */
+  height: 100vh;
+}
+
+.cover-text {
+  position: absolute;
+  bottom: 2em;
+  display: block;
+  max-width: 25em;
+  font-size: 1.5em;
+}
+
+.cover-body-content {
+  /* border-left: 1px solid red; */
+  display: block;
+  height: 500px;
+  width: 50%;
+	float: right;
+}
+
+
+.chapter-number {
+  position: absolute;
+  top: 0;
+  display: block;
+  color: black;
+  font-size: 12em;
+  font-weight: bold;
+}
+
+/* .chapter-4 {
+  background-color: #3E4248;
+  background: url('{{ site.baseurl }}/images/research-bg.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
+
+/* .chapter-4 {
+  background-color: #3E4248;
+  background-image: url('{{ site.baseurl }}/images/research-bg.png');
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/* INCLUDE list components */
+.sticky-type {
+  font-size: 6em;
+  color: red;
+  font-weight: bold;
+  position: sticky;
+  position:-webkit-sticky;
+  top: 0;
+  float: left;
+  margin-bottom: -1.4em;
+}
+
+.sticky-type-container img {
+  padding-top: 3.5em;
+}
+
+.sticky-type-container {
+  float: left;
+  display: block;
+  margin-bottom: -3em;
+}
+
+/* INCLUDE Publishing type table */
+.publishing-apps-container {
+	display: block;
+	height: 250px;
+	border-bottom: 1px solid black;
+	position: relative;
+	bottom: 0;
+  margin-bottom: 10em;
+}
+
+
+.publishing-apps {
+	position: absolute;
+	bottom: 0;
+	float: left;
+	text-align: left;
+	font-size: 0.8em;
+
+  line-height: 1.1em;
+  width: 58%;
+}
+
+.publishing-apps th {
+		vertical-align: bottom;
+		padding: 0 0 10px 10px;
+}
+
+.publishing-apps td {
+		border-top: 1px solid black;
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		vertical-align: top;
+		padding: 10px;
+		height: 180px;
+}
+
+.personal {
+	width: 71%;
+	background-color: #292d34;
+	color: white;
+}
+
+.professional {
+	width: 29%;
+	background-color: white;
+}
+
+/* Content types table */
+.content-types table {
+	border-collapse: collapse;
+	table-layout: fixed;
+  width: 75%;
+  float: right;
+  margin-bottom: 2em;
+}
+
+.content-types p, h4, h5 {
+	font-size: 0.8em;
+	line-height: 1.1em;
+	padding-bottom: 0;
+}
+
+.content-types th, td {
+	border-left: 1px solid black;
+	vertical-align: bottom;
+	padding-left: 0.5em;
+}
+
+.content-types th {
+	font-weight: bold;
+}
+
+/* INCLUDE Job stories */
+.job-stories-container {
+  padding-top: 2em;
+}
+
+.job-stories {
+	width: 100%;
+	float: right;
+	text-align: left;
+  padding-bottom: 3em;
+}
+
+/* Job stories without the period */
+.job-stories ol {
+font-size: 2.5em;
+color: #3497FF;
+font-weight: bold;
+counter-reset: item;
+list-style-type: none;
+}
+
+.job-stories li {
+display: block;
+}
+
+.job-stories li:before {
+content: counter(item, upper-alpha) " ";
+counter-increment: item;
+margin-left: -1em;
+}
+
+/* User journey */
+.user-journey {
+  margin-bottom: 2em;
+}
+
+/* INCLUDE research */
+.research {
+  width: 100%;
+  display: block;
+  clear: both;
+  float: left;
+}
+
+.research img {
+  display: block;
+  float: right;
+  width: 80%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
+
+/* Page design / layout */
+.page-layout {
+  position: relative;
+  overflow: visible;
+}
+
+.page-layout ol {
+  padding-top: 2em;
+	list-style-type: decimal;
+	list-style-position: outside;
+	font-size: 1.1em;
+
+  color: #3497FF;
+  padding-bottom: 2em;
+}
+
+.page-layout img {
+  float: right;
+  margin-bottom: 2em;
+  width: 66.66%;
+}
+
+
+
+/* 12 column grid */
+
+.col-12 {
+	width: 100%;
+}
+
+.col-11 {
+  	width: 91.66%;
+}
+.col-10 {
+  	width: 83.33%;
+}
+
+.col-9 {
+  	width: 75%;
+}
+
+.col-8 {
+  	width: 66.66%;
+}
+
+.col-7 {
+  	width: 58.33%;
+}
+
+.col-6 {
+  	width: 50%;
+}
+
+.col-5 {
+  	width: 41.66%;
+}
+
+.col-4 {
+  	width: 33.33%;
+}
+
+.col-3 {
+  	width: 25%;
+}
+
+.col-2 {
+  	width: 16.66%;
+}
+
+.col-1 {
+  	width: 8.333%;
+}
+
+
+/* RESPONSIVE TYPE */
+/* @media screen and (max-width: 50em) {
+  body { font-size: 90%;}
+} */
+
+/*  */
+@media only screen and (max-width: 650px) {
+    body {
+      font-size: 90%;
+    }
+
+    .cover-text {
+      font-size: 1.2em;
+    }
+
+    .cover-grid {
+      margin: 0;
+    }
+
+    .cover-body-content {
+      width: 100%;
+    }
+
+    .chapter-number {
+      font-size: 8em;
+    }
+
+    .page-intro img {
+      width: 80%;
+      float: left;
+      margin-bottom: 1em;
+    }
+
+    .page-intro-body {
+      width: 100%;
+      font-size: 0.8em;
+    }
+
+    .page-intro-lede {
+      font-size: 1.5em;
+      height: 30vh;
+      margin-bottom: 1em;
+    }
+
+    .extra-big {
+      font-size: 5em;
+    }
+
+    .fact {
+      margin-top: -6em;
+      padding-top: 1em;
+      font-size: 1.2em;
+      margin-bottom: 1em;
+    }
+
+    aside {
+      display: block;
+      width: 100%;
+      position: relative;
+      clear: both;
+    }
+
+    .sticky-type {
+      font-size: 4em;
+      position: relative;
+    }
+
+    .grid {
+      margin: 0 ;
+    }
+
+    .body-content {
+      width: 100%;
+      float: left;
+    }
+
+    .publishing-apps {
+      width: 100%;
+    }
+
+    .job-stories-container {
+      margin-left: 2em;
+    }
+
+    .job-stories ol {
+      font-size: 2em;
+    }
+
+    .page-layout ol {
+      list-style-position: inside;
+    }
+
+    .page-layout img {
+      width: 100%;
+    }
+
+    .content-types table {
+      max-width: 100%;
+
+      float: left;
+    }
+
+    .content-types td {
+      display: block;
+      width: 100%;
+      align: left;
+      vertical-align: top;
+      padding-bottom: 0.8em;
+  }
+    .content-types th {
+      vertical-align: top;
+      padding-top: 0.85em;
+    }
+
+    .content-types h3 {
+      padding-bottom: 3em;
+
+    }
+
+    .content-types p {
+      /* font sizes */
+      padding-bottom: 1.1em;
+    }
+    .research img {
+      float: left;
+      width: 60%;
+    }
+
+    .row {
+      margin-bottom: 2em;
+    }
+  }
+
+/* Fade images in as the user scrolls */
+
+  /* Before scrolling into viewport */
+  .reveal {
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: all 1s;
+  }
+
+  /* After scrolling into viewport */
+  .reveal.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
